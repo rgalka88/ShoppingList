@@ -16,4 +16,6 @@ public interface Repository<T> {
     Single<T> update(T item);
 
     Completable removeItem(Specification specification);
+
+    void store();
 }

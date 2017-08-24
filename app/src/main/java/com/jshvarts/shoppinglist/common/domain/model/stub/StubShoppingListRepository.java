@@ -20,6 +20,10 @@ import timber.log.Timber;
 
 @Singleton
 public class StubShoppingListRepository implements Repository<ShoppingList> {
+    @Override
+    public void store() {
+
+    }
 
     private final Set<ShoppingList> shoppingLists;
 

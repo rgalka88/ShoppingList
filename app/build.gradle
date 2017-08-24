@@ -117,6 +117,9 @@ dependencies {
 
     // PowerMock
     testCompile "org.powermock:powermock-core:$project.powerMockVersion"
+
+    // AutoFitTextView
+    compile 'me.grantland:autofittextview:0.2.+'
 }
 
 apply plugin: 'com.google.gms.google-services'

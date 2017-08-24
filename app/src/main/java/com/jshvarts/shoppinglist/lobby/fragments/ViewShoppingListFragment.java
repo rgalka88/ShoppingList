@@ -147,10 +147,10 @@ public class ViewShoppingListFragment extends LifecycleFragment {
 
     private void attachAddShoppingListItemFragment() {
         fab.hide();
-        Fragment addShoppingListItemFragment = new AddShoppingListItemFragment();
+        Fragment autofitFragment = new AutofitFragment();
         getChildFragmentManager().beginTransaction()
-                .addToBackStack(AddShoppingListItemFragment.TAG)
-                .add(R.id.shopping_list_fragment_root_view, addShoppingListItemFragment, AddShoppingListItemFragment.TAG)
+                .addToBackStack(null)
+                .add(R.id.shopping_list_fragment_root_view, autofitFragment, AutofitFragment.TAG)
                 .commit();
     }
 

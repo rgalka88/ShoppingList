@@ -122,4 +122,9 @@ public class FirebaseShoppingListRepository implements Repository<ShoppingList> 
     public Completable removeItem(Specification specification) {
         throw new RuntimeException("Not implemented");
     }
+
+    @Override
+    public void store() {
+
+    }
 }

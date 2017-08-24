@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
+    android:orientation="vertical"
     android:background="@color/white_opaque_color"
     tools:context="com.jshvarts.shoppinglist.lobby.fragments.AddShoppingListItemFragment">
 
@@ -11,9 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:gravity="center"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginRight="20dp"
+        android:visibility="gone">
 
         <EditText
             android:id="@+id/shopping_list_item_name_edittext"
@@ -31,4 +32,14 @@
 
     </LinearLayout>
 
-</FrameLayout>
+    <me.grantland.widget.AutofitTextView xmlns:autofit="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLines="2"
+        android:textSize="40sp"
+        autofit:minTextSize="16sp"
+        android:text="asd asd ad asdasdas adsas asd as asd as"
+        />
+
+</LinearLayout>
