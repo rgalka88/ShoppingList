@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.grantland.widget.AutofitLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    android:background="@drawable/btn_bug_bg"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:background="@drawable/subscribe_button_selector"
+        android:text="Join Now"
+        android:layout_gravity="center_horizontal|bottom"
+        android:paddingBottom="5dp"
+        android:layout_marginBottom="15dp"
+        />
+
+</me.grantland.widget.AutofitLayout>
